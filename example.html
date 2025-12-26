@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parchment Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    body {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+    }
+    nav { margin-bottom: 2rem; }
+    nav a { margin-right: 1rem; }
+    #parchment-content {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      min-height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Parchment Example</h1>
+  <nav>
+    <a href="docs/hello.md">Hello</a>
+    <a href="docs/about.md">About</a>
+  </nav>
+
+  <div id="parchment-content">
+    <p>Click a link above to load markdown content.</p>
+  </div>
+
+  <script src="parchment.js"></script>
+  <script>
+    Parchment.init({
+      backLink: true
+    });
+  </script>
+</body>
+</html>
