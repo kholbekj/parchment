@@ -112,9 +112,15 @@
 
     // Update history
     if (updateHistory && config.historyMode !== 'none') {
-      const url = config.historyMode === 'param'
-        ? `${window.location.pathname}?${config.paramName}=${encodeURIComponent(path)}`
-        : path;
+      let url;
+      if (config.historyMode === 'param') {
+        // Preserve existing query params, only update the path param
+        const params = new URLSearchParams(window.location.search);
+        params.set(config.paramName, path);
+        url = `${window.location.pathname}?${params.toString()}`;
+      } else {
+        url = path;
+      }
       history.pushState({ parchmentPath: path }, '', url);
     }
 
