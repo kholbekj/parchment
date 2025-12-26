@@ -13,7 +13,8 @@
     }
   },
   "files": [
-    "parchment.js"
+    "parchment.js",
+    "README.md"
   ],
   "scripts": {
     "serve": "npx serve ."
