@@ -214,7 +214,7 @@
     navigate: navigate,
     bindLinks: bindLinks,
     getConfig: getConfig,
-    version: '0.1.0'
+    version: '0.2.0'
   };
 
 })(typeof window !== 'undefined' ? window : this);

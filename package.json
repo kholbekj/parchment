@@ -1,6 +1,6 @@
 {
   "name": "@drifting-ink/parchment",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A minimal JavaScript library for markdown navigation",
   "main": "parchment.js",
   "browser": "parchment.js",
