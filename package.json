@@ -1,0 +1,46 @@
+{
+  "name": "@drifting-ink/parchment",
+  "version": "0.1.0",
+  "description": "A minimal JavaScript library for markdown navigation",
+  "main": "parchment.js",
+  "browser": "parchment.js",
+  "unpkg": "parchment.js",
+  "jsdelivr": "parchment.js",
+  "exports": {
+    ".": {
+      "browser": "./parchment.js",
+      "default": "./parchment.js"
+    }
+  },
+  "files": [
+    "parchment.js"
+  ],
+  "scripts": {
+    "serve": "npx serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drifting-ink/parchment.git"
+  },
+  "keywords": [
+    "markdown",
+    "navigation",
+    "spa",
+    "client-side",
+    "browser"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drifting-ink/parchment/issues"
+  },
+  "homepage": "https://github.com/drifting-ink/parchment#readme",
+  "peerDependencies": {
+    "marked": ">=4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "marked": {
+      "optional": true
+    }
+  }
+}
